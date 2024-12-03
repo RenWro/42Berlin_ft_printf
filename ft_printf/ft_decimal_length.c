@@ -11,3 +11,18 @@
 /* ************************************************************************** */
 
 #include "libftprintf.h"
+
+int	ft_decimal_length(long int nbr)
+{
+	int	length;
+
+	length = 0;
+	if (nbr <= 0)
+		length++;
+	while (nbr)
+	{
+		nbr /= 10;
+		length++;
+	}
+	return (length);
+}
