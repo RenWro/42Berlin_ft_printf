@@ -1,10 +1,10 @@
 <h1 align="center"> 42Berlin_ft_printf </h1>
 
 ---
-<h1 align="center">>What is ft_printf?</h1>
+<h1 align="center">What is ft_printf?</h1>
 The third project at 42 programming school. It consists of a static library that contains ft_printf - a function that mimics the real printf - and another library (Libft, the first project at 42) with recoded standard functions in C to support the project's development. It's an extremely useful function that does a series of base conversions (decimal and hexadecimal) and makes the output much easier - especially when compared to its predecessor in 42 - the system call write. The function can be used in future projects.
 ---
-<h1 align="center">>How does it work?</h1>
+<h1 align="center">How does it work?</h1>
 For this project we were introduced to the concept of variadic functions 
 
 The printf function is one of the most known and used in the C language to give an output. It takes a string as an argument, this string may contain some placeholders (like %c for characters or %s for strings) whose original values are passed as arguments. The ft_printf has variable arguments, the only one being mandatory is the string that will be printed, otherwise it depends on how many placeholders are passed in this string. The function's return is the number of characters printed or -1 for error.
