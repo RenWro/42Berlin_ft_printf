@@ -4,9 +4,9 @@
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: rwrobles <rwrobles@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+           #
+#                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/17 17:00:16 by rwrobles          #+#    #+#              #
-#    Updated: 2024/12/07 14:31:18 by rwrobles         ###   ########.fr        #
+#    Updated: 2024/12/07 23:01:36 by rwrobles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ RESET		= \033[0m
 # Paths
 LIBFT_DIR	= ./libft
 LIBFT		= $(LIBFT_DIR)/libft.a
-INCLUDE		= -I $(LIBFT_DIR) -I ./includes
+INCLUDE		= -I ft_printf -I $(LIBFT_DIR)
 
 # Compiler and flags
 CC			= clang
@@ -30,19 +30,20 @@ FLAGS		= -Wall -Wextra -Werror
 REMOVE		= rm -f
 
 # Source files
-SRCS		= ft_printf.c			\
-		ft_argument_c.c		\
-		ft_arguments_d_i.c	\
-		ft_argument_p.c		\
-		ft_argument_percent.c	\
-		ft_argument_s.c		\
-		ft_argument_u.c		\
-		ft_arguments_x.c		\
-		ft_print_reversed_str.c	\
-		ft_free_ptr.c			\
-		ft_hex_length.c		\
-		ft_decimal_length.c	\
-		ft_decimal_converter_to_hex.c
+SRCS_DIR	= ft_printf
+SRCS		= $(SRCS_DIR)/ft_printf.c			\
+				$(SRCS_DIR)/ft_argument_c.c		\
+				$(SRCS_DIR)/ft_arguments_d_i.c	\
+				$(SRCS_DIR)/ft_argument_p.c		\
+				$(SRCS_DIR)/ft_argument_percent.c	\
+				$(SRCS_DIR)/ft_argument_s.c		\
+				$(SRCS_DIR)/ft_argument_u.c		\
+				$(SRCS_DIR)/ft_arguments_x.c		\
+				$(SRCS_DIR)/ft_print_reversed_str.c	\
+				$(SRCS_DIR)/ft_free_ptr.c			\
+				$(SRCS_DIR)/ft_hex_length.c		\
+				$(SRCS_DIR)/ft_decimal_length.c	\
+				$(SRCS_DIR)/ft_decimal_converter_to_hex.c
 
 # Object files
 OBJS		= $(SRCS:.c=.o)
@@ -67,7 +68,8 @@ $(LIBFT):
 
 # Test rule
 main: $(NAME)
-	$(CC) $(FLAGS) -o main main.c $(NAME) $(INCLUDE)
+	@$(CC) $(FLAGS) -o main main.c $(NAME) $(INCLUDE)
+	@echo "$(GREEN)Main executable created!$(RESET)"
 
 # Clean object files
 clean:
@@ -88,4 +90,4 @@ re: fclean all
 norm:
 	@norminette
 
-.PHONY: all clean fclean re norm
+.PHONY: all clean fclean re norm main
