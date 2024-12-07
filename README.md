@@ -32,6 +32,27 @@ To handle the variable number of arguments, use the following functions:
 <li>va_end: Cleans up the memory used for the argument list.</li>
 </ul>
 
+Our version of the printf function will be called ft_printf, and will be able to work with the following inputs:
+
+Specifiers
+Specifier	Description
+%	Prints the percent character
+c	Prints a character
+s	Prints a string (array of characters)
+d,i	Prints an integer
+p	Prints pointer address (hex starting with 0x)
+u	Prints an unsigned integer
+x	Prints an unsigned hexadecimal integer (lowecase a-f)
+X	Prints an unsigned hexadecimal integer (uppercase A-F)
+Flags
+Flag	Description
+(width)	Specifies the minimum width of the printed variable (adds spaces when necessary)
+(precision)	Selects the minimum number of elements of the variable that are printed (Eg. number of chars from a string)
+-	Pads text to the left (adds spaces to the right)
+0	Pads text with zeroes instead of spaces
+.	Separates Width and Precision
+*	Indicates that the Width or the Precision will be specified using an additional variable
+
 <h2 align="center">>How do I use the library?</h2>
 It aims to create a library called libftprintf.a from the source files.
 To create this library, clone the project:
