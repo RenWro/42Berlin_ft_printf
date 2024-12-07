@@ -12,23 +12,25 @@ The printf function is one of the most known and used in the C language to give 
 To create with a function like this, it must be a variadic function (with variable number of arguments), which is possible to achieve using the header <stdarg.h> and parameters like va_arg for the list arguments in order of occurrence or va_start and va_end to start and end the use of the argument list. For each conversion required by the subject, there's a function that converts the argument and returns the numer of bytes writed:
 
 <h2>Mandatory Conversions</h2>
-
-%c → single character.
-%s → string.
-%p → pointer in hexadecimal format.
-%d, %i → integers (base 10).
-%u → unsigned integers (base 10).
-%x, %X → numbers in hexadecimal (lowercase/uppercase).
-%% → percent symbol.
+<ul>
+<li>%c → single character.</li>
+<li>%s → string.</li>
+<li>%p → pointer in hexadecimal format.</li>
+<li>%d, %i → integers (base 10).</li>
+<li>%u → unsigned integers (base 10).</li>
+<li>%x, %X → numbers in hexadecimal (lowercase/uppercase).</li>
+<li>%% → percent symbol.</li>
+</ul>
 
 <h2>Variadic Functions</h2>
 
 To handle the variable number of arguments, use the following functions:
-
-va_start: Initializes the list of arguments.
-va_arg: Retrieves the next argument from the list.
-va_copy (if necessary): Copies the current state of the argument list.
-va_end: Cleans up the memory used for the argument list.
+<ul>
+<li>va_start: Initializes the list of arguments.</li>
+<li>va_arg: Retrieves the next argument from the list.</li>
+<li>va_copy (if necessary): Copies the current state of the argument list.</li>
+<li>va_end: Cleans up the memory used for the argument list.</li>
+</ul>
 
 <h2 align="center">>How do I use the library?</h2>
 It aims to create a library called libftprintf.a from the source files.
