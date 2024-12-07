@@ -64,7 +64,7 @@ You have to tell the file which library it's using:
  
 That's it. Now run it using ./a.out
 
-<h2 align="center">>How do I test it?</h2>
+<h2 align="center">How do I test it?</h2>
 To test the code we're going to be using @jgambard's Printf Tester. There are some good others but I'll only be covering this one.
 
 To test the code in this repo Clone this repo and cd into it:
