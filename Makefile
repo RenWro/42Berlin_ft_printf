@@ -10,6 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
+
 # Program name
 NAME		= libftprintf.a
 
@@ -30,18 +31,18 @@ REMOVE		= rm -f
 
 # Source files
 SRCS		= ft_printf.c			\
-				ft_argument_c.c		\
-				ft_arguments_d_i.c	\
-				ft_argument_p.c		\
-				ft_argument_percent.c	\
-				ft_argument_s.c		\
-				ft_argument_u.c		\
-				ft_arguments_x.c		\
-				ft_print_reversed_str.c	\
-				ft_free_ptr.c			\
-				ft_hex_length.c		\
-				ft_decimal_length.c	\
-				ft_decimal_converter_to_hex.c
+		ft_argument_c.c		\
+		ft_arguments_d_i.c	\
+		ft_argument_p.c		\
+		ft_argument_percent.c	\
+		ft_argument_s.c		\
+		ft_argument_u.c		\
+		ft_arguments_x.c		\
+		ft_print_reversed_str.c	\
+		ft_free_ptr.c			\
+		ft_hex_length.c		\
+		ft_decimal_length.c	\
+		ft_decimal_converter_to_hex.c
 
 # Object files
 OBJS		= $(SRCS:.c=.o)
