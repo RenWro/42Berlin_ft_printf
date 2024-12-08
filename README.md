@@ -99,3 +99,8 @@ Go into the test folder and run the mandatory test:
 In case that your project or another project you are going to evaluate has a bonus, run the bonus test too:
 
 	make b
+
+---
+<h2>Testing</h2>
+
+This function have been tested with Francinette and Valgrind and it contains the projects Libft and Printf
