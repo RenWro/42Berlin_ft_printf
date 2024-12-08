@@ -34,7 +34,7 @@ To handle the variable number of arguments, use the following functions:
 </ul>
 
 
-<h2 align="center">>How do I use the library?</h2>
+<h2 align="center">How do I use the library?</h2>
 It aims to create a library called libftprintf.a from the source files.
 To create this library, clone the project:
 
