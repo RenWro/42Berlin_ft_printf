@@ -100,6 +100,16 @@ In case that your project or another project you are going to evaluate has a bon
 
 	make b
 
+<h3>Command Summary</h3>
+make: Compiles the mandatory part.
+make bonus: Compiles with bonuses.
+make clean: Removes .o files.
+make fclean: Removes .o and libraries.
+make re: Recompiles everything.
+make main: Compiles the main program with main.c.
+./main: Runs the main program.
+make norm: Checks the code with Norminette
+
 ---
 <h2>Testing</h2>
 
