@@ -1,5 +1,5 @@
 <h1 align="center"> 42Berlin_ft_printf </h1>
-![image](https://github.com/user-attachments/assets/bd8517a8-67b1-4847-9ffb-b946354b776c)
+<img align="center" src="https://github.com/user-attachments/assets/bd8517a8-67b1-4847-9ffb-b946354b776c">
 
 ---
 <h1 align="center">What is ft_printf?</h1>
