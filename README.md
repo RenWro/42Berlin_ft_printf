@@ -3,10 +3,19 @@
 
 ----
 <h3>This repository contains all files for the printf project from School 42 Berlin cursus. The project consist in duplicate the printf() function, part of the stdio.h library.</h3>
-----
 
 <h1 align="center">What is ft_printf?</h1>
 The third project at 42 programming school. It consists of a static library that contains ft_printf - a function that mimics the real printf - and another library (Libft, the first project at 42) with recoded standard functions in C to support the project's development. It's an extremely useful function that does a series of base conversions (decimal and hexadecimal) and makes the output much easier - especially when compared to its predecessor in 42 - the system call write. The function can be used in future projects.
+---
+<h1>About</h1>
+This project consists in duplicate the behavior of the C function printf(). It is not necessary to implement the buffer management of the original function. It must handle the following parameters:
+
+	char type variables.
+	string type variables.
+	int type variables.
+	unsigned int type variables.
+	hexadecimal int type variables (uppercase and lowercase).
+	pointer type variables.
 ---
 <h1 align="center">How does it work?</h1>
 For this project we were introduced to the concept of variadic functions 
