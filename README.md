@@ -10,6 +10,7 @@ The third project at 42 programming school. It consists of a static library that
 <h1>About</h1>
 This project consists in duplicate the behavior of the C function printf(). It is not necessary to implement the buffer management of the original function. It must handle the following parameters:
 
+
 	char type variables.
 	string type variables.
 	int type variables.
